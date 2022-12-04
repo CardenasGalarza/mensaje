@@ -1,0 +1,6 @@
+https://github.com/aljosa/pyinstaller-streamlit-plotly/blob/main/build.sh       ---->  tutorial
+
+pyinstaller --additional-hooks-dir=hooks/ --hidden-import cmath run.py       ----> sin logo
+
+pyinstaller --additional-hooks-dir=hooks/ --hidden-import cmath --icon=./psii.ico run.py     ------>con logo
+
