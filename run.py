@@ -23,7 +23,7 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 #from soupsieve import select  # pip install pandas openpyxl
-import streamlit_authenticator as stauth  # pip install streamlit-authenticator
+#import streamlit_authenticator as stauth  # pip install streamlit-authenticator
 ############################################ OCULTAR INFROMACION NO IMPORTANTE
 import base64
 import mysql.connector
@@ -38,6 +38,7 @@ warnings.filterwarnings('ignore')
 import time
 from datetime import datetime
 from datetime import timedelta
+import streamlit_authenticator as stauth
 
 if __name__ == '__main__':
 
