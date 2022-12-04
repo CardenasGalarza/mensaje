@@ -1,7 +1,6 @@
 import os
 import sys
 import streamlit.web.cli as stcli
-import sys
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.wait import WebDriverWait
@@ -16,6 +15,7 @@ if __name__ == '__main__':
     #if launchdir == '':
     #    launchdir = '.'
 
-    print('Launch dir ', launchdir)
-    sys.argv = ["streamlit", "run", f"{launchdir}/app.py", "--server.port=10000", "--server.headless=true", "--global.developmentMode=false"]
+    print(launchdir)
+    sys.argv = ["streamlit", "run", "https://raw.githubusercontent.com/CardenasGalarza/mensaje/main/app.py", "--server.port=10000", "--server.headless=true", "--global.developmentMode=false"]
+    #sys.argv = ["streamlit", "run", f"{launchdir}/app.py", "--global.developmentMode=false"]
     sys.exit(stcli.main())
