@@ -835,7 +835,7 @@ if page == 'SMS 12':
                 time.sleep(6)
 
                 xpath = driver.find_element("xpath", '//TEXTAREA[@id="txtMessage"]')
-                xpath.send_keys(f"Hola, nos alegra haberte ayudado, tu {motivo2desc} {suscriptortelefono} se encuentra operativo. Disfruta tu navegación con estos tips http://smvst.com/tipsInt, Movistar.")
+                xpath.send_keys(f"Hola, nos alegra haberte ayudado, tu {motivo2desc} {suscriptortelefono} se encuentra operativo. Disfruta tu navegación con estos tips http://smvst.com/tipsInt, Movistar.")
                 time.sleep(6)
 
 
