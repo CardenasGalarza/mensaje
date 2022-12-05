@@ -15,9 +15,32 @@ from datetime import datetime
 
 st.set_page_config(page_title='bdtickets-Averias', page_icon="🌀", layout='centered', initial_sidebar_state='auto')
 
+st.title('📨APP GESTION ENVIAR MENSAJE')
 ## borrar nombres de la pagina
 
+col1, col2, col3 = st.columns(3)
 
+
+
+with col2:
+    nombre = st.selectbox(
+        'ingresa tu nombre',
+        ('', 'Gian', 'alexis'))
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.write("")
+
+with col2:
+    st.write("")
+    st.write("")
+    st.write("")
+
+    st.write("")
+
+with col3:
+    st.write("")
 
 with st.form(key='my_form', clear_on_submit=True):
 
@@ -25,12 +48,12 @@ with st.form(key='my_form', clear_on_submit=True):
 
     with col1:
         celu = st.text_input('Celular')
-    with col2:
-        option = st.selectbox(
-            'How would you like to be contacted?',
-            ('Email', 'Home phone', 'Mobile phone'))
+    #with col2:
+    #    option = st.selectbox(
+    #        'How would you like to be contacted?',
+    #        ('Email', 'Home phone', 'Mobile phone'))
 
-        st.write('You selected:', option)
+    #    st.write('You selected:', option)
 
     mensaje = st.selectbox(
         "Mensaje",
