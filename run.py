@@ -11,6 +11,8 @@ warnings.filterwarnings('ignore')
 ##########################
 import time
 from datetime import datetime
+import mysql.connector
+
 
 if __name__ == '__main__':
 

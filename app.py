@@ -9,7 +9,8 @@ warnings.filterwarnings('ignore')
 ##########################
 import time
 from datetime import datetime
-
+###############33
+##data
 
 
 
@@ -43,6 +44,8 @@ with col3:
     st.write("")
 
 with st.form(key='my_form', clear_on_submit=True):
+    import mysql.connector
+    from mysql.connector import Error
 
     col1, col2, col3 = st.columns(3)
 
@@ -77,10 +80,32 @@ with st.form(key='my_form', clear_on_submit=True):
 
     if submitted == True:
 
+
+
         with st.spinner('Enviado mensaje...'):
+
+            cnxn = mysql.connector.connect( host="10.226.120.172",
+                                    port="3306",
+                                    user="slinea",
+                                    passwd="OP81^K@u",
+                                    db="segunda_linea"
+                                    )
+            cursor = cnxn.cursor()
+
 
             date = datetime.now()
             tiempo = (date.strftime("%d-%m-%Y %H:%M:%S"))
+
+
+            sql = "INSERT INTO MENSAJE (NOMBRE, SMS, HORA) VALUES (%s, %s, %s)"
+            val = (nombre, mensaje, tiempo)
+            cursor.execute(sql, val)
+            cnxn.commit()
+
+            
+            cursor.close()
+            cnxn.close()
+
 
 
             options = Options()
@@ -180,6 +205,7 @@ with st.form(key='my_form', clear_on_submit=True):
                 driver.quit()
 
                 st.markdown(f'<p class="big-font"; style="text-align:center;background-image: linear-gradient(to right,Cyan, Cyan);color:BLACK;font-size:16px;border-radius:2%;">Mensaje enviado</p>', unsafe_allow_html=True)
+
 
 
 ## fondo total
