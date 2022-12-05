@@ -26,7 +26,7 @@ col1, col2, col3 = st.columns(3)
 with col2:
     nombre = st.sidebar.selectbox(
         'Ingresa tu nombre',
-        ('', 'Gian', 'alexis'))
+        ('', 'AARON',	'ALONDRA',	'ANGEL',	'BERENICE',	'BLANCA',	'CESAR',	'CRISTHIAN',	'DENISSE',	'DHALIA',	'DIANA',	'EDER',	'EDINSON',	'EDUARDO',	'EDWIN',	'ELIZABETH NOVOA',	'ELIZABETH RIVERA',	'ERICK',	'FABRIZIO',	'FIORELLA OBREGON',	'FIORELLA FIGARI',	'FRANK',	'GERALDINE',	'GIAN',	'GIOVANA',	'GIOVANNA',	'HANS',	'HELLEN',	'JOSE',	'JOSELYN',	'JULIANA',	'JULISSA',	'KATHERINE',	'KEITH',	'KELLY',	'KENNY',	'LEYDI',	'MARIA',	'MARIALENA',	'MARYCARMEN',	'MARYURI',	'MAURO',	'MILAGROS',	'NICOL',	'RENATO',	'TERESA',	'VILMA',	'VITE',	'WILDER',	'YESSICA',	'YHAMALI',	'ZUNNY'))
 
 col1, col2, col3 = st.columns(3)
 
