@@ -14,7 +14,7 @@ from datetime import datetime
 
 
 
-st.set_page_config(page_title='bdtickets-Averias', page_icon="🌀", layout='centered', initial_sidebar_state='auto')
+st.set_page_config(page_title='bdtickets-Averias', page_icon="📨", layout='centered', initial_sidebar_state='auto')
 
 st.title('📨APP GESTION ENVIAR MENSAJE')
 ## borrar nombres de la pagina
@@ -102,7 +102,7 @@ with st.form(key='my_form', clear_on_submit=True):
             cursor.execute(sql, val)
             cnxn.commit()
 
-            
+
             cursor.close()
             cnxn.close()
 
