@@ -114,16 +114,16 @@ with st.form(key='my_form', clear_on_submit=True):
             options.add_argument("--disable-dev-shm-usage")
             options.add_argument("--disable-gpu")
             options.add_argument("--disable-features=NetworkService")
-            options.add_argument("--window-size=1920x1080")
+            #options.add_argument("--window-size=1920x1080")
             options.add_argument("--disable-features=VizDisplayCompositor")
 
             
 
             st.balloons()
 
-            
 
             driver = webdriver.Chrome(options=options, service_log_path='selenium.log')
+            driver.maximize_window()
 
             username = 'caramburu_TDP'
             passwordd = 'WebSys29*T*'

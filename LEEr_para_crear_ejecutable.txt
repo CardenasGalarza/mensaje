@@ -6,3 +6,7 @@ pyinstaller --additional-hooks-dir=hooks/ --hidden-import cmath --icon=./psii.ic
 
 
 MO OLVIDAR QUE ESTO LOS MODULOS DE APP DEBEN DE ESTAR EN RUN COPIA Y PEGA
+
+
+
+pyinstaller --additional-hooks-dir=hooks/ --hidden-import cmath --icon=./psii.ico run.py
